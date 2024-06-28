@@ -14,6 +14,7 @@
 		4BD9753C2C2F277D0037FE1A /* JustChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9753B2C2F277D0037FE1A /* JustChatTests.swift */; };
 		4BD975462C2F277D0037FE1A /* JustChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975452C2F277D0037FE1A /* JustChatUITests.swift */; };
 		4BD975482C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975472C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift */; };
+		4BD9755D2C2F2B930037FE1A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9755C2C2F2B930037FE1A /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4BD975412C2F277D0037FE1A /* JustChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD975452C2F277D0037FE1A /* JustChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustChatUITests.swift; sourceTree = "<group>"; };
 		4BD975472C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BD9755C2C2F2B930037FE1A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */,
+				4BD975542C2F2A160037FE1A /* Model */,
+				4BD975552C2F2A220037FE1A /* View */,
+				4BD975562C2F2A270037FE1A /* ViewModel */,
+				4BD975592C2F2A4F0037FE1A /* Resources */,
+				4BD975582C2F2A470037FE1A /* Utils */,
+				4BD975572C2F2A350037FE1A /* Services */,
 				4BD9752C2C2F277B0037FE1A /* ContentView.swift */,
 				4BD9752E2C2F277C0037FE1A /* Assets.xcassets */,
 				4BD975302C2F277C0037FE1A /* Preview Content */,
@@ -125,6 +133,65 @@
 				4BD975472C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift */,
 			);
 			path = JustChatUITests;
+			sourceTree = "<group>";
+		};
+		4BD975542C2F2A160037FE1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BD975552C2F2A220037FE1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9755A2C2F2B6A0037FE1A /* LoginView */,
+				4BD9755B2C2F2B760037FE1A /* CreateAccountView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BD975562C2F2A270037FE1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4BD975572C2F2A350037FE1A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4BD975582C2F2A470037FE1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4BD975592C2F2A4F0037FE1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BD9755A2C2F2B6A0037FE1A /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9755C2C2F2B930037FE1A /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		4BD9755B2C2F2B760037FE1A /* CreateAccountView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreateAccountView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD9755D2C2F2B930037FE1A /* LoginView.swift in Sources */,
 				4BD9752D2C2F277B0037FE1A /* ContentView.swift in Sources */,
 				4BD9752B2C2F277B0037FE1A /* JustChatApp.swift in Sources */,
 			);
