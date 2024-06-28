@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     
     //MARK: - Properties
+    @Binding var isLoginView: Bool
     @State private var username = ""
     @State private var password = ""
     @State private var isSecure: Bool = true
@@ -25,29 +26,7 @@ struct LoginView: View {
                 .padding(.bottom, 20)
             
             // Fields Area
-            Group {
-                TextField("Username", text: $username)
-                
-                HStack {
-                    if isSecure {
-                        SecureField("Password", text: $password)
-                    }
-                    else {
-                        TextField("Password", text: $password)
-                    }
-                    Button(action: {
-                        isSecure.toggle()
-                    }) {
-                        Image(systemName: isSecure ? "eye.slash.fill" : "eye.fill")
-                            .foregroundStyle(.gray)
-                    }
-                }
-            }
-            .padding()
-            .background(Color(.systemGray6))
-            .clipShape(RoundedRectangle(cornerRadius: 8))
-            .padding(.horizontal)
-            .padding(.bottom, 10)
+            Fields()
             
             // Log In Button
             Button {
@@ -65,19 +44,22 @@ struct LoginView: View {
             .padding(.bottom, 10)
             
             // Navigation Button to Create Account View
-            NavigationLink(destination: EmptyView()) {
-                Text("Create Account")
-                    .fontWeight(.semibold)
-                    .foregroundStyle(.blue)
+            // Navigation Button to Log In View
+            Button {
+                self.isLoginView = false
+            } label: {
+                Text("Log In")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 20)
             }
             Spacer()
         }
-        .padding()
         .background(Color(.systemBackground))
     }
 }
 
 //MARK: - Preview
 #Preview {
-    LoginView()
+    LoginView(isLoginView: .constant(true))
 }

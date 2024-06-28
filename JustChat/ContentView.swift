@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //MARK: - Properties
+    @State private var isLoginView = true
+    
+    //MARK: - Body
     var body: some View {
+        
+        // Navigate in start pages
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("My Chat App First Commit")
+            if isLoginView {
+                LoginView(isLoginView: $isLoginView)
+            } else {
+                CreateAccountView(isLoginView: $isLoginView)
+            }
         }
-        .padding()
     }
 }
 
+//MARK: - Preview
 #Preview {
     ContentView()
 }
