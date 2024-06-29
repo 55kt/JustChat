@@ -18,6 +18,14 @@
 		4BD9755F2C2F37D50037FE1A /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9755E2C2F37D50037FE1A /* CreateAccountView.swift */; };
 		4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975622C2F3CCE0037FE1A /* customFields.swift */; };
 		4BD975652C304AC20037FE1A /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975642C304AC20037FE1A /* customButton.swift */; };
+		4BD975682C3052FE0037FE1A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975672C3052FE0037FE1A /* UserProfileView.swift */; };
+		4BD9756A2C30537C0037FE1A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975692C30537C0037FE1A /* User.swift */; };
+		4BD9756E2C3056140037FE1A /* profileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9756D2C3056140037FE1A /* profileImage.swift */; };
+		4BD975742C3060620037FE1A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975732C3060620037FE1A /* MainTabView.swift */; };
+		4BD975762C3061060037FE1A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975752C3061060037FE1A /* SettingsView.swift */; };
+		4BD975782C3061120037FE1A /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975772C3061120037FE1A /* ChatsView.swift */; };
+		4BD9757A2C3061250037FE1A /* GoChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975792C3061250037FE1A /* GoChatView.swift */; };
+		4BD9757C2C306F310037FE1A /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9757B2C306F310037FE1A /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,14 @@
 		4BD9755E2C2F37D50037FE1A /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		4BD975622C2F3CCE0037FE1A /* customFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFields.swift; sourceTree = "<group>"; };
 		4BD975642C304AC20037FE1A /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		4BD975672C3052FE0037FE1A /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		4BD975692C30537C0037FE1A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4BD9756D2C3056140037FE1A /* profileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImage.swift; sourceTree = "<group>"; };
+		4BD975732C3060620037FE1A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		4BD975752C3061060037FE1A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4BD975772C3061120037FE1A /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		4BD975792C3061250037FE1A /* GoChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoChatView.swift; sourceTree = "<group>"; };
+		4BD9757B2C306F310037FE1A /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +160,7 @@
 		4BD975542C2F2A160037FE1A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4BD975692C30537C0037FE1A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,8 +168,10 @@
 		4BD975552C2F2A220037FE1A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4BD975722C30604C0037FE1A /* MainTabView */,
 				4BD9755A2C2F2B6A0037FE1A /* LoginView */,
 				4BD9755B2C2F2B760037FE1A /* CreateAccountView */,
+				4BD975662C3052DF0037FE1A /* UserProfileView */,
 				4BD975612C2F3C940037FE1A /* Components */,
 			);
 			path = View;
@@ -207,8 +226,29 @@
 			children = (
 				4BD975622C2F3CCE0037FE1A /* customFields.swift */,
 				4BD975642C304AC20037FE1A /* customButton.swift */,
+				4BD9756D2C3056140037FE1A /* profileImage.swift */,
+				4BD9757B2C306F310037FE1A /* CustomTabView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4BD975662C3052DF0037FE1A /* UserProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				4BD975672C3052FE0037FE1A /* UserProfileView.swift */,
+			);
+			path = UserProfileView;
+			sourceTree = "<group>";
+		};
+		4BD975722C30604C0037FE1A /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				4BD975732C3060620037FE1A /* MainTabView.swift */,
+				4BD975752C3061060037FE1A /* SettingsView.swift */,
+				4BD975772C3061120037FE1A /* ChatsView.swift */,
+				4BD975792C3061250037FE1A /* GoChatView.swift */,
+			);
+			path = MainTabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,12 +381,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD975782C3061120037FE1A /* ChatsView.swift in Sources */,
+				4BD975682C3052FE0037FE1A /* UserProfileView.swift in Sources */,
+				4BD9757A2C3061250037FE1A /* GoChatView.swift in Sources */,
 				4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */,
 				4BD9755D2C2F2B930037FE1A /* LoginView.swift in Sources */,
+				4BD9756E2C3056140037FE1A /* profileImage.swift in Sources */,
 				4BD975652C304AC20037FE1A /* customButton.swift in Sources */,
+				4BD9756A2C30537C0037FE1A /* User.swift in Sources */,
 				4BD9752D2C2F277B0037FE1A /* ContentView.swift in Sources */,
 				4BD9755F2C2F37D50037FE1A /* CreateAccountView.swift in Sources */,
 				4BD9752B2C2F277B0037FE1A /* JustChatApp.swift in Sources */,
+				4BD975742C3060620037FE1A /* MainTabView.swift in Sources */,
+				4BD975762C3061060037FE1A /* SettingsView.swift in Sources */,
+				4BD9757C2C306F310037FE1A /* CustomTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
