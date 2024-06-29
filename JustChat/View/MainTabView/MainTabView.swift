@@ -14,7 +14,7 @@ struct MainTabView: View {
     
     //MARK: - Body
     var body: some View {
-        ZStack {
+        VStack {
             switch selectedTab {
             case 1:
                 ChatsView()
@@ -26,11 +26,10 @@ struct MainTabView: View {
                 GoChatView()
             }
             
-            VStack {
-                Spacer()
-                CustomTabView(tabSelection: $selectedTab)
-            }
+            Spacer()
+            CustomTabView(tabSelection: $selectedTab)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 //MARK: - Preview
