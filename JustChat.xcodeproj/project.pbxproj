@@ -16,7 +16,8 @@
 		4BD975482C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975472C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift */; };
 		4BD9755D2C2F2B930037FE1A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9755C2C2F2B930037FE1A /* LoginView.swift */; };
 		4BD9755F2C2F37D50037FE1A /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9755E2C2F37D50037FE1A /* CreateAccountView.swift */; };
-		4BD975632C2F3CCE0037FE1A /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975622C2F3CCE0037FE1A /* Fields.swift */; };
+		4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975622C2F3CCE0037FE1A /* customFields.swift */; };
+		4BD975652C304AC20037FE1A /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975642C304AC20037FE1A /* customButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,8 @@
 		4BD975472C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4BD9755C2C2F2B930037FE1A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4BD9755E2C2F37D50037FE1A /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
-		4BD975622C2F3CCE0037FE1A /* Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		4BD975622C2F3CCE0037FE1A /* customFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFields.swift; sourceTree = "<group>"; };
+		4BD975642C304AC20037FE1A /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +151,9 @@
 		4BD975552C2F2A220037FE1A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4BD975602C2F3B9B0037FE1A /* Login&CreateAccount */,
+				4BD9755A2C2F2B6A0037FE1A /* LoginView */,
+				4BD9755B2C2F2B760037FE1A /* CreateAccountView */,
+				4BD975612C2F3C940037FE1A /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,20 +202,11 @@
 			path = CreateAccountView;
 			sourceTree = "<group>";
 		};
-		4BD975602C2F3B9B0037FE1A /* Login&CreateAccount */ = {
-			isa = PBXGroup;
-			children = (
-				4BD9755A2C2F2B6A0037FE1A /* LoginView */,
-				4BD9755B2C2F2B760037FE1A /* CreateAccountView */,
-				4BD975612C2F3C940037FE1A /* Components */,
-			);
-			path = "Login&CreateAccount";
-			sourceTree = "<group>";
-		};
 		4BD975612C2F3C940037FE1A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4BD975622C2F3CCE0037FE1A /* Fields.swift */,
+				4BD975622C2F3CCE0037FE1A /* customFields.swift */,
+				4BD975642C304AC20037FE1A /* customButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -346,8 +341,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD975632C2F3CCE0037FE1A /* Fields.swift in Sources */,
+				4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */,
 				4BD9755D2C2F2B930037FE1A /* LoginView.swift in Sources */,
+				4BD975652C304AC20037FE1A /* customButton.swift in Sources */,
 				4BD9752D2C2F277B0037FE1A /* ContentView.swift in Sources */,
 				4BD9755F2C2F37D50037FE1A /* CreateAccountView.swift in Sources */,
 				4BD9752B2C2F277B0037FE1A /* JustChatApp.swift in Sources */,

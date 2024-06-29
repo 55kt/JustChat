@@ -7,13 +7,15 @@
 
 import SwiftUI
 
-struct Fields: View {
+struct customFields: View {
     
     //MARK: - Properties
     @State private var isSecure: Bool = true
-    @State private var username = ""
-    @State private var password = ""
-    @State private var phoneNumber = ""
+    @State var username: String
+    @State var password: String
+    @State var phoneNumber: String
+    
+    var showPhoneNumber: Bool
     
     var body: some View {
         Group {
@@ -33,8 +35,10 @@ struct Fields: View {
                         .foregroundStyle(.gray)
                 }
             }
-            TextField("Phone Number", text: $phoneNumber)
-            
+            if showPhoneNumber {
+                TextField("Phone Number", text: $phoneNumber)
+                
+            }
         }
         .padding()
         .background(Color(.systemGray6))
@@ -45,5 +49,5 @@ struct Fields: View {
 }
 
 #Preview {
-    Fields()
+    customFields(username: "", password: "", phoneNumber: "", showPhoneNumber: false)
 }

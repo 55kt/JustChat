@@ -8,20 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    //MARK: - Properties
-    @State private var isLoginView = true
-    
+
     //MARK: - Body
     var body: some View {
-        
-        // Navigate in start pages
-        VStack {
-            if isLoginView {
-                LoginView(isLoginView: $isLoginView)
-            } else {
-                CreateAccountView(isLoginView: $isLoginView)
-            }
+        NavigationStack {
+            LoginView()
         }
     }
 }
