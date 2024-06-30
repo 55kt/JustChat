@@ -10,7 +10,7 @@ import SwiftUI
 struct MainTabView: View {
     
     //MARK: - Properties
-    @State private var selectedTab = 2
+    @State private var selectedTab = 3
     
     //MARK: - Body
     var body: some View {
@@ -19,8 +19,12 @@ struct MainTabView: View {
             case 1:
                 ChatsView()
             case 2:
-                GoChatView()
+                SomeView()
             case 3:
+                GoChatView()
+            case 4:
+                ProfileView()
+            case 5:
                 SettingsView()
             default:
                 GoChatView()
@@ -29,7 +33,7 @@ struct MainTabView: View {
             Spacer()
             CustomTabView(tabSelection: $selectedTab)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        
     }
 }
 //MARK: - Preview

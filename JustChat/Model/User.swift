@@ -14,3 +14,4 @@ struct User {
     var profileImage: Image
     var isAnonimus: Bool
 }
+

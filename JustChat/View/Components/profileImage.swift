@@ -17,10 +17,10 @@ struct profileImage: View {
         image
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+            .frame(width: 200, height: 200)
             .clipShape(Circle())
-            .overlay(Circle().stroke(Color.white, lineWidth: 4))
-            .shadow(radius: 10)
+            .overlay(Circle().stroke(Color.white, lineWidth: 2))
+            .shadow(radius: 7)
     }
 }
 

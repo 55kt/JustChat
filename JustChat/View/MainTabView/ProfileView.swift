@@ -1,13 +1,13 @@
 //
-//  UserProfileView.swift
+//  ProfileView.swift
 //  JustChat
 //
-//  Created by Vlad on 29/6/24.
+//  Created by Vlad on 30/6/24.
 //
 
 import SwiftUI
 
-struct UserProfileView: View {
+struct ProfileView: View {
     
     //MARK: - Properties
     @State private var user = User(username: "Jesus Christ", location: "Paradise", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel turpis facilisis, tincidunt turpis et, dictum nunc.", profileImage: Image(systemName: "person.circle"), isAnonimus: false) // Test User Var
@@ -28,30 +28,18 @@ struct UserProfileView: View {
             
             Text(user.description)
                 .font(.body)
-                .padding(.top)
             }
-            Spacer()
+        .padding()
         
         Toggle("Anonimus Status", isOn: $user.isAnonimus)
             .padding()
         
-        HStack {
-            Button {
-                // Settings Action
-            } label: {
-                Text("Settings")
-                    .fontWeight(.semibold)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .foregroundStyle(.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-            }
-        }
+            Spacer()
+        
         }
     }
 
 //MARK: - Preview
 #Preview {
-    UserProfileView()
+    ProfileView()
 }

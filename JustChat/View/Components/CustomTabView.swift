@@ -11,13 +11,16 @@ struct CustomTabView: View {
     
     //MARK: - Properties
     @Binding var tabSelection: Int
-    @State private var selectedTab: Int = 1
+    @State private var selectedTab: Int = 2
     @Namespace private var animationNamespace
     
     let tabBarItems: [(image: String, title: String)] = [
         ("message", "Chats"),
+        ("questionmark", "SomeView"),
         ("magnifyingglass", "GoChat"),
-        ("gearshape", "Settings")
+        ("person.crop.circle", "Profile"),
+        ("gearshape", "Settings"),
+        
     ]
     
     //MARK: - Body
@@ -30,7 +33,7 @@ struct CustomTabView: View {
                 .blur(radius: 1)
             
             HStack(spacing: 0) {
-                ForEach(0..<3) { index in
+                ForEach(0..<5) { index in
                     Button {
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
                             selectedTab = index 
