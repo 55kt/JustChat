@@ -13,16 +13,8 @@ struct SettingsView: View {
     
     //MARK: - Body
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Settings")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                
-                Spacer()
-            }
-            .padding()
-            .navigationBarTitle("Settings")
+        VStack {
+            customNavBar(navTiltle: "Settings")
         }
     }
 }

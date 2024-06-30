@@ -13,16 +13,8 @@ struct ChatsView: View {
     
     //MARK: - Body
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Chats")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                
-                Spacer()
-            }
-            .padding()
-            .navigationBarTitle("Chats")
+        VStack {
+            customNavBar(navTiltle: "Chats")
         }
     }
 }

@@ -28,7 +28,7 @@ struct CustomTabView: View {
         ZStack {
             Capsule()
                 .frame(height: 80)
-                .foregroundStyle(Color(.secondarySystemBackground))
+                .foregroundStyle(Color(.secondarySystemBackground).opacity(0.15))
                 .shadow(radius: 2)
                 .blur(radius: 1)
             

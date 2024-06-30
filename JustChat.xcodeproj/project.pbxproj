@@ -19,7 +19,7 @@
 		4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975622C2F3CCE0037FE1A /* customFields.swift */; };
 		4BD975652C304AC20037FE1A /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975642C304AC20037FE1A /* customButton.swift */; };
 		4BD9756A2C30537C0037FE1A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975692C30537C0037FE1A /* User.swift */; };
-		4BD9756E2C3056140037FE1A /* profileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9756D2C3056140037FE1A /* profileImage.swift */; };
+		4BD9756E2C3056140037FE1A /* customImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9756D2C3056140037FE1A /* customImage.swift */; };
 		4BD975742C3060620037FE1A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975732C3060620037FE1A /* MainTabView.swift */; };
 		4BD975762C3061060037FE1A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975752C3061060037FE1A /* SettingsView.swift */; };
 		4BD975782C3061120037FE1A /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975772C3061120037FE1A /* ChatsView.swift */; };
@@ -28,6 +28,7 @@
 		4BD9757E2C3085880037FE1A /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9757D2C3085880037FE1A /* Background.swift */; };
 		4BD975802C31906A0037FE1A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9757F2C31906A0037FE1A /* ProfileView.swift */; };
 		4BD975822C3190820037FE1A /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975812C3190820037FE1A /* SomeView.swift */; };
+		4BD975842C319ABB0037FE1A /* customNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975832C319ABB0037FE1A /* customNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +64,7 @@
 		4BD975622C2F3CCE0037FE1A /* customFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFields.swift; sourceTree = "<group>"; };
 		4BD975642C304AC20037FE1A /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		4BD975692C30537C0037FE1A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		4BD9756D2C3056140037FE1A /* profileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImage.swift; sourceTree = "<group>"; };
+		4BD9756D2C3056140037FE1A /* customImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customImage.swift; sourceTree = "<group>"; };
 		4BD975732C3060620037FE1A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		4BD975752C3061060037FE1A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4BD975772C3061120037FE1A /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		4BD9757D2C3085880037FE1A /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		4BD9757F2C31906A0037FE1A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4BD975812C3190820037FE1A /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
+		4BD975832C319ABB0037FE1A /* customNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,9 +231,10 @@
 			children = (
 				4BD975622C2F3CCE0037FE1A /* customFields.swift */,
 				4BD975642C304AC20037FE1A /* customButton.swift */,
-				4BD9756D2C3056140037FE1A /* profileImage.swift */,
+				4BD9756D2C3056140037FE1A /* customImage.swift */,
 				4BD9757B2C306F310037FE1A /* CustomTabView.swift */,
 				4BD9757D2C3085880037FE1A /* Background.swift */,
+				4BD975832C319ABB0037FE1A /* customNavBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -383,7 +386,7 @@
 				4BD9757A2C3061250037FE1A /* GoChatView.swift in Sources */,
 				4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */,
 				4BD9755D2C2F2B930037FE1A /* LoginView.swift in Sources */,
-				4BD9756E2C3056140037FE1A /* profileImage.swift in Sources */,
+				4BD9756E2C3056140037FE1A /* customImage.swift in Sources */,
 				4BD975652C304AC20037FE1A /* customButton.swift in Sources */,
 				4BD975822C3190820037FE1A /* SomeView.swift in Sources */,
 				4BD9756A2C30537C0037FE1A /* User.swift in Sources */,
@@ -395,6 +398,7 @@
 				4BD975762C3061060037FE1A /* SettingsView.swift in Sources */,
 				4BD9757C2C306F310037FE1A /* CustomTabView.swift in Sources */,
 				4BD9757E2C3085880037FE1A /* Background.swift in Sources */,
+				4BD975842C319ABB0037FE1A /* customNavBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
