@@ -17,11 +17,9 @@ struct customImage: View {
     var body: some View {
         image
             .resizable()
-            .aspectRatio(contentMode: .fill)
             .frame(width: imageSize.width, height: imageSize.height)
-            .clipShape(Circle())
             .overlay(Circle().stroke(Color.white, lineWidth: 2))
-            .shadow(radius: 7)
+            .shadow(radius: 2)
     }
 }
 

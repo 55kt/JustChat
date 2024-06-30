@@ -27,38 +27,43 @@ struct CustomTabView: View {
     var body: some View {
         ZStack {
             Capsule()
+                .fill(Color(.secondarySystemBackground).opacity(0.5))
                 .frame(height: 80)
-                .foregroundStyle(Color(.secondarySystemBackground).opacity(0.15))
                 .shadow(radius: 2)
                 .blur(radius: 1)
             
-            HStack(spacing: 0) {
-                ForEach(0..<5) { index in
-                    Button {
-                        withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                            selectedTab = index 
-                            tabSelection = index + 1
+            VStack {
+                HStack(spacing: 0) {
+                    ForEach(0..<5) { index in
+                        Button {
+                            withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                                selectedTab = index
+                                tabSelection = index + 1
+                            }
+                        } label: {
+                            VStack(spacing: 10) {
+                                Image(systemName: tabBarItems[index].image)
+                                    .scaleEffect(selectedTab == index ? 2.0 : 1.2)
+                                    .foregroundStyle(selectedTab == index ? .blue : .gray)
+                                Text(tabBarItems[index].title)
+                                    .font(.caption)
+                                    .foregroundColor(selectedTab == index ? .blue : .gray)
+                            }
+                            
                         }
-                    } label: {
-                        VStack(spacing: 10) {
-                            Image(systemName: tabBarItems[index].image)
-                                .scaleEffect(selectedTab == index ? 2.0 : 1.2)
-                                .foregroundStyle(selectedTab == index ? .blue : .gray)
-                            Text(tabBarItems[index].title)
-                                .font(.caption)
-                                .foregroundColor(selectedTab == index ? .blue : .gray)
-                        }
-                        
+                        .frame(maxWidth: .infinity)
+                        .opacity(0.8)
                     }
-                    .frame(maxWidth: .infinity)
+                    .frame(height: 80)
                 }
-                .frame(height: 80)
-                .clipShape(Capsule())
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
+            .background(Color.clear)
+            
+            
+            
         }
     }
-    
 }
 
 //MARK: - Preview

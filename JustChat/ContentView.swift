@@ -13,7 +13,6 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             MainTabView()
-                .background(Background().ignoresSafeArea())
         }
     }
 }

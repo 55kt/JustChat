@@ -15,7 +15,10 @@ struct customNavBar: View {
     //MARK: - Body
     var body: some View {
         ZStack {
-            Color.clear
+            Color(.secondarySystemBackground).opacity(0.5)
+                .ignoresSafeArea()
+                .shadow(radius: 2)
+                .blur(radius: 1)
             
             Text(navTiltle)
                 .font(.largeTitle.weight(.bold))
@@ -24,6 +27,7 @@ struct customNavBar: View {
         }
         .frame(height: 70)
         .frame(maxHeight: .infinity, alignment: .top)
+        .padding(.bottom)
     }
 }
 
