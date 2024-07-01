@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    @State private var selectedTab: Int = 3
+    
     //MARK: - Body
     var body: some View {
         NavigationStack {
-            MainTabView()
+            
+            ZStack {
+                Background()
+                
+                MainTabView(selectedTab: $selectedTab)
+                    .edgesIgnoringSafeArea(.bottom) 
+                
+                CustomTabView(tabSelection: $selectedTab)
+            }
+            
+            
+            
         }
     }
 }

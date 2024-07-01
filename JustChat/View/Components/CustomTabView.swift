@@ -25,14 +25,10 @@ struct CustomTabView: View {
     
     //MARK: - Body
     var body: some View {
-        ZStack {
-            Capsule()
-                .fill(Color(.secondarySystemBackground).opacity(0.5))
-                .frame(height: 80)
-                .shadow(radius: 2)
-                .blur(radius: 1)
+        VStack {
+            Spacer()
             
-            VStack {
+            ZStack {
                 HStack(spacing: 0) {
                     ForEach(0..<5) { index in
                         Button {
@@ -52,21 +48,24 @@ struct CustomTabView: View {
                             
                         }
                         .frame(maxWidth: .infinity)
-                        .opacity(0.8)
                     }
-                    .frame(height: 80)
                 }
+                .padding(.top, 17)
                 .padding(.horizontal)
+                .padding(.bottom, 20)
+                .background(
+                    BlurView(style: .systemUltraThinMaterial)
+                        .cornerRadius(30)
+                        .shadow(color: Color.red.opacity(0.4), radius: 10, x: 0, y: 5)
+                )
+                .padding(.horizontal, 10)
+                .padding(.bottom, 20)
             }
-            .background(Color.clear)
-            
-            
-            
         }
     }
 }
 
 //MARK: - Preview
 #Preview {
-    CustomTabView(tabSelection: .constant(1))
+    CustomTabView(tabSelection: .constant(3))
 }

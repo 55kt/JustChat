@@ -13,7 +13,7 @@ struct GoChatView: View {
     
     //MARK: - Body
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             customNavBar(navTiltle: "GoChat")
         }
     }

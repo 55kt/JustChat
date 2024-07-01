@@ -14,12 +14,11 @@ struct ProfileView: View {
     
     //MARK: - Body
     var body: some View {
-        ZStack {
+        VStack {
             customNavBar(navTiltle: "Profile")
             
-            VStack() {
+            VStack {
                 customImage(image: Image(systemName: "person.circle.fill"), imageSize: CGSize(width: 200, height: 200))
-                    
                 
                 Text(user.username)
                     .font(.title)
@@ -32,26 +31,19 @@ struct ProfileView: View {
                 Text(user.description)
                     .font(.body)
                     .padding(.horizontal)
+                    .lineLimit(nil)
+                    .fixedSize(horizontal: false, vertical: true)
                 
                 Toggle("Anonimus Status", isOn: $user.isAnonimus)
-                    .padding()
-                
-                    
-                }
-            .frame(maxHeight: 550, alignment: .top)
+                                    .padding()
+            }
+            .padding()
+            
+            Spacer()
             
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        }
     }
+}
 
 //MARK: - Preview
 #Preview {

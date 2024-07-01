@@ -29,6 +29,7 @@
 		4BD975802C31906A0037FE1A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9757F2C31906A0037FE1A /* ProfileView.swift */; };
 		4BD975822C3190820037FE1A /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975812C3190820037FE1A /* SomeView.swift */; };
 		4BD975842C319ABB0037FE1A /* customNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975832C319ABB0037FE1A /* customNavBar.swift */; };
+		4BD975892C3321F30037FE1A /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975882C3321F30037FE1A /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		4BD9757F2C31906A0037FE1A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4BD975812C3190820037FE1A /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
 		4BD975832C319ABB0037FE1A /* customNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNavBar.swift; sourceTree = "<group>"; };
+		4BD975882C3321F30037FE1A /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		4BD975582C2F2A470037FE1A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4BD975882C3321F30037FE1A /* BlurView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */,
 				4BD9755D2C2F2B930037FE1A /* LoginView.swift in Sources */,
 				4BD9756E2C3056140037FE1A /* customImage.swift in Sources */,
+				4BD975892C3321F30037FE1A /* BlurView.swift in Sources */,
 				4BD975652C304AC20037FE1A /* customButton.swift in Sources */,
 				4BD975822C3190820037FE1A /* SomeView.swift in Sources */,
 				4BD9756A2C30537C0037FE1A /* User.swift in Sources */,

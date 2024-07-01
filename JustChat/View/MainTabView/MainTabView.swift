@@ -10,7 +10,7 @@ import SwiftUI
 struct MainTabView: View {
     
     //MARK: - Properties
-    @State private var selectedTab = 3
+    @Binding var selectedTab: Int
     
     //MARK: - Body
     var body: some View {
@@ -31,12 +31,11 @@ struct MainTabView: View {
             }
             
             Spacer()
-            CustomTabView(tabSelection: $selectedTab)
         }
         
     }
 }
 //MARK: - Preview
 #Preview {
-    MainTabView()
+    MainTabView(selectedTab: .constant(3))
 }

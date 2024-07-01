@@ -10,7 +10,7 @@ import SwiftUI
 struct SomeView: View {
     var body: some View {
         VStack {
-            customNavBar(navTiltle: "SomeView")
+            customNavBar(navTiltle: "Some View")
         }
     }
 }

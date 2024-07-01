@@ -14,20 +14,16 @@ struct customNavBar: View {
     
     //MARK: - Body
     var body: some View {
-        ZStack {
-            Color(.secondarySystemBackground).opacity(0.5)
-                .ignoresSafeArea()
-                .shadow(radius: 2)
-                .blur(radius: 1)
-            
+        VStack(alignment: .leading) {
             Text(navTiltle)
                 .font(.largeTitle.weight(.bold))
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .topLeading)
                 .padding(.leading, 20)
+                .padding(.top, 20)
+                .padding(.bottom, 10)
+                
         }
-        .frame(height: 70)
-        .frame(maxHeight: .infinity, alignment: .top)
-        .padding(.bottom)
+        .shadow(radius: 10)
     }
 }
 
