@@ -22,13 +22,42 @@ struct MessageView: View {
         VStack {
             
             // Nav Bar
-            HStack {
-                Text("User Chat Name")
-                    .font(.title)
-                    .bold()
-                Spacer()
+            VStack {
+                HStack {
+                    // User image
+                    backButton
+                    
+                                Image(systemName: "person.circle.fill")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 60, height: 60)
+                                    .clipped()
+                                    .cornerRadius(60)
+                                    .overlay(RoundedRectangle(cornerRadius: 60)
+                                        .stroke(.gray.opacity(0.5))
+                                    )
+                                    .shadow(radius: 5)
+                                
+                                // Username
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Username")
+                            .font(.system(size: 24, weight: .bold))
+                        HStack {
+                            // Online status
+                            Circle()
+                                .foregroundStyle(.green)
+                                .frame(width: 14, height: 14)
+                            Text("Online")
+                                .font(.system(size: 12))
+                                .foregroundStyle(Color(.lightGray))
+                        }
+                    }
+                    Spacer()
+                        .frame(width: 150)
+                }
+                .navigationBarBackButtonHidden(true)
             }
-            .padding()
+            
             
             // Messages scroller
             ScrollView {
@@ -52,12 +81,26 @@ struct MessageView: View {
             Button {
                 sendMessage()
             } label: {
-                Image(systemName: "paperplane.fill")
+                Image(systemName: "arrow.up.message")
                     .font(.system(size: 24))
                     .foregroundStyle(.blue)
             }
         }
         .padding()
+    }
+    
+    // Back Button
+    @Environment(\.presentationMode) var presentationMode
+    
+    var backButton: some View {
+        Button(action: {
+            presentationMode.wrappedValue.dismiss()
+        }) {
+            HStack {
+                Image(systemName: "chevron.left")
+                    .font(.title)
+            }
+        }
     }
     
     // Send Message Function
@@ -79,5 +122,7 @@ struct Message: Identifiable {
 
 //MARK: - Preview
 #Preview {
-    MessageView()
+    NavigationStack {
+        MessageView()
+    }
 }
