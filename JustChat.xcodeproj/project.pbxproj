@@ -32,6 +32,13 @@
 		4BD975892C3321F30037FE1A /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975882C3321F30037FE1A /* BlurView.swift */; };
 		4BD9758C2C344A9F0037FE1A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9758B2C344A9F0037FE1A /* MessageView.swift */; };
 		4BD9758E2C344C5C0037FE1A /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9758D2C344C5C0037FE1A /* BubbleView.swift */; };
+		4BD975A52C35ADED0037FE1A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975A42C35ADED0037FE1A /* RealmSwift */; };
+		4BD975A82C35AE770037FE1A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975A72C35AE770037FE1A /* FirebaseAuth */; };
+		4BD975AA2C35AE770037FE1A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975A92C35AE770037FE1A /* FirebaseFirestore */; };
+		4BD975AC2C35AE770037FE1A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975AB2C35AE770037FE1A /* FirebaseMessaging */; };
+		4BD975AE2C35AE770037FE1A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975AD2C35AE770037FE1A /* FirebaseStorage */; };
+		4BD975B02C35BAF00037FE1A /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975AF2C35BAF00037FE1A /* ChatMessage.swift */; };
+		4BD975B22C35BAFB0037FE1A /* ChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975B12C35BAFB0037FE1A /* ChatSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +87,8 @@
 		4BD975882C3321F30037FE1A /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		4BD9758B2C344A9F0037FE1A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		4BD9758D2C344C5C0037FE1A /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		4BD975AF2C35BAF00037FE1A /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		4BD975B12C35BAFB0037FE1A /* ChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD975AC2C35AE770037FE1A /* FirebaseMessaging in Frameworks */,
+				4BD975A52C35ADED0037FE1A /* RealmSwift in Frameworks */,
+				4BD975A82C35AE770037FE1A /* FirebaseAuth in Frameworks */,
+				4BD975AE2C35AE770037FE1A /* FirebaseStorage in Frameworks */,
+				4BD975AA2C35AE770037FE1A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +146,7 @@
 			children = (
 				4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */,
 				4BD9752C2C2F277B0037FE1A /* ContentView.swift */,
-				4BD975542C2F2A160037FE1A /* Model */,
+				4BD975542C2F2A160037FE1A /* Models */,
 				4BD975552C2F2A220037FE1A /* View */,
 				4BD975562C2F2A270037FE1A /* ViewModel */,
 				4BD975592C2F2A4F0037FE1A /* Resources */,
@@ -169,12 +183,14 @@
 			path = JustChatUITests;
 			sourceTree = "<group>";
 		};
-		4BD975542C2F2A160037FE1A /* Model */ = {
+		4BD975542C2F2A160037FE1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4BD975692C30537C0037FE1A /* User.swift */,
+				4BD975AF2C35BAF00037FE1A /* ChatMessage.swift */,
+				4BD975B12C35BAFB0037FE1A /* ChatSession.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4BD975552C2F2A220037FE1A /* View */ = {
@@ -285,6 +301,13 @@
 			dependencies = (
 			);
 			name = JustChat;
+			packageProductDependencies = (
+				4BD975A42C35ADED0037FE1A /* RealmSwift */,
+				4BD975A72C35AE770037FE1A /* FirebaseAuth */,
+				4BD975A92C35AE770037FE1A /* FirebaseFirestore */,
+				4BD975AB2C35AE770037FE1A /* FirebaseMessaging */,
+				4BD975AD2C35AE770037FE1A /* FirebaseStorage */,
+			);
 			productName = JustChat;
 			productReference = 4BD975272C2F277B0037FE1A /* JustChat.app */;
 			productType = "com.apple.product-type.application";
@@ -357,6 +380,10 @@
 				Base,
 			);
 			mainGroup = 4BD9751E2C2F277B0037FE1A;
+			packageReferences = (
+				4BD975A32C35ADED0037FE1A /* XCRemoteSwiftPackageReference "realm-swift" */,
+				4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4BD975282C2F277B0037FE1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -399,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD975B02C35BAF00037FE1A /* ChatMessage.swift in Sources */,
 				4BD975782C3061120037FE1A /* ChatsView.swift in Sources */,
 				4BD9757A2C3061250037FE1A /* GoChatView.swift in Sources */,
 				4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */,
@@ -414,6 +442,7 @@
 				4BD9758C2C344A9F0037FE1A /* MessageView.swift in Sources */,
 				4BD9755F2C2F37D50037FE1A /* CreateAccountView.swift in Sources */,
 				4BD9752B2C2F277B0037FE1A /* JustChatApp.swift in Sources */,
+				4BD975B22C35BAFB0037FE1A /* ChatSession.swift in Sources */,
 				4BD975742C3060620037FE1A /* MainTabView.swift in Sources */,
 				4BD975762C3061060037FE1A /* SettingsView.swift in Sources */,
 				4BD9757C2C306F310037FE1A /* CustomTabView.swift in Sources */,
@@ -748,6 +777,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BD975A32C35ADED0037FE1A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BD975A42C35ADED0037FE1A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD975A32C35ADED0037FE1A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		4BD975A72C35AE770037FE1A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4BD975A92C35AE770037FE1A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4BD975AB2C35AE770037FE1A /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		4BD975AD2C35AE770037FE1A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BD9751F2C2F277B0037FE1A /* Project object */;
 }

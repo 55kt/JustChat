@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     //MARK: - Properties
-    @State private var user = User(username: "Jesus Christ", location: "Paradise", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel turpis facilisis, tincidunt turpis et, dictum nunc.", profileImage: Image(systemName: "person.circle"), isAnonimus: false) // Test User Var
+    @State private var user = User()
     
     //MARK: - Body
     var body: some View {
@@ -20,7 +20,7 @@ struct ProfileView: View {
             VStack {
                 customImage(image: Image(systemName: "person.circle.fill"), imageSize: CGSize(width: 200, height: 200))
                 
-                Text(user.username)
+                Text(user.name)
                     .font(.title)
                     .fontWeight(.bold)
                 
@@ -28,7 +28,7 @@ struct ProfileView: View {
                     .font(.subheadline)
                     .foregroundStyle(.foreground)
                 
-                Text(user.description)
+                Text(user.about)
                     .font(.body)
                     .padding(.horizontal)
                     .lineLimit(nil)
