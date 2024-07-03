@@ -24,7 +24,7 @@
 		4BD975762C3061060037FE1A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975752C3061060037FE1A /* SettingsView.swift */; };
 		4BD975782C3061120037FE1A /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975772C3061120037FE1A /* ChatsView.swift */; };
 		4BD9757A2C3061250037FE1A /* GoChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975792C3061250037FE1A /* GoChatView.swift */; };
-		4BD9757C2C306F310037FE1A /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9757B2C306F310037FE1A /* CustomTabView.swift */; };
+		4BD9757C2C306F310037FE1A /* customTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9757B2C306F310037FE1A /* customTabView.swift */; };
 		4BD9757E2C3085880037FE1A /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9757D2C3085880037FE1A /* Background.swift */; };
 		4BD975802C31906A0037FE1A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9757F2C31906A0037FE1A /* ProfileView.swift */; };
 		4BD975822C3190820037FE1A /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975812C3190820037FE1A /* SomeView.swift */; };
@@ -39,6 +39,8 @@
 		4BD975AE2C35AE770037FE1A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975AD2C35AE770037FE1A /* FirebaseStorage */; };
 		4BD975B02C35BAF00037FE1A /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975AF2C35BAF00037FE1A /* ChatMessage.swift */; };
 		4BD975B22C35BAFB0037FE1A /* ChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975B12C35BAFB0037FE1A /* ChatSession.swift */; };
+		4BD975B42C35CD320037FE1A /* SearchParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975B32C35CD320037FE1A /* SearchParametersView.swift */; };
+		4BD975B62C35CD830037FE1A /* TagSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975B52C35CD830037FE1A /* TagSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +81,7 @@
 		4BD975752C3061060037FE1A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4BD975772C3061120037FE1A /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
 		4BD975792C3061250037FE1A /* GoChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoChatView.swift; sourceTree = "<group>"; };
-		4BD9757B2C306F310037FE1A /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		4BD9757B2C306F310037FE1A /* customTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabView.swift; sourceTree = "<group>"; };
 		4BD9757D2C3085880037FE1A /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		4BD9757F2C31906A0037FE1A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4BD975812C3190820037FE1A /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,8 @@
 		4BD9758D2C344C5C0037FE1A /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		4BD975AF2C35BAF00037FE1A /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		4BD975B12C35BAFB0037FE1A /* ChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSession.swift; sourceTree = "<group>"; };
+		4BD975B32C35CD320037FE1A /* SearchParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParametersView.swift; sourceTree = "<group>"; };
+		4BD975B52C35CD830037FE1A /* TagSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,7 +260,7 @@
 				4BD975622C2F3CCE0037FE1A /* customFields.swift */,
 				4BD975642C304AC20037FE1A /* customButton.swift */,
 				4BD9756D2C3056140037FE1A /* customImage.swift */,
-				4BD9757B2C306F310037FE1A /* CustomTabView.swift */,
+				4BD9757B2C306F310037FE1A /* customTabView.swift */,
 				4BD9757D2C3085880037FE1A /* Background.swift */,
 				4BD975832C319ABB0037FE1A /* customNavBar.swift */,
 			);
@@ -272,6 +276,8 @@
 				4BD975792C3061250037FE1A /* GoChatView.swift */,
 				4BD9757F2C31906A0037FE1A /* ProfileView.swift */,
 				4BD975812C3190820037FE1A /* SomeView.swift */,
+				4BD975B32C35CD320037FE1A /* SearchParametersView.swift */,
+				4BD975B52C35CD830037FE1A /* TagSelectionView.swift */,
 			);
 			path = MainTabView;
 			sourceTree = "<group>";
@@ -431,6 +437,7 @@
 				4BD9757A2C3061250037FE1A /* GoChatView.swift in Sources */,
 				4BD975632C2F3CCE0037FE1A /* customFields.swift in Sources */,
 				4BD9755D2C2F2B930037FE1A /* LoginView.swift in Sources */,
+				4BD975B42C35CD320037FE1A /* SearchParametersView.swift in Sources */,
 				4BD9756E2C3056140037FE1A /* customImage.swift in Sources */,
 				4BD975892C3321F30037FE1A /* BlurView.swift in Sources */,
 				4BD975652C304AC20037FE1A /* customButton.swift in Sources */,
@@ -445,8 +452,9 @@
 				4BD975B22C35BAFB0037FE1A /* ChatSession.swift in Sources */,
 				4BD975742C3060620037FE1A /* MainTabView.swift in Sources */,
 				4BD975762C3061060037FE1A /* SettingsView.swift in Sources */,
-				4BD9757C2C306F310037FE1A /* CustomTabView.swift in Sources */,
+				4BD9757C2C306F310037FE1A /* customTabView.swift in Sources */,
 				4BD9757E2C3085880037FE1A /* Background.swift in Sources */,
+				4BD975B62C35CD830037FE1A /* TagSelectionView.swift in Sources */,
 				4BD975842C319ABB0037FE1A /* customNavBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
