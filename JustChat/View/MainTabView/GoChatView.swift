@@ -24,36 +24,49 @@ struct GoChatView: View {
         VStack {
             customNavBar(navTiltle: "GoChat")
             
-            VStack(spacing: 20) {
-                Button {
-                    showingSearchParameters = true
-                } label: {
-                    Image(systemName: "slider.vertical.3")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                }
-                .sheet(isPresented: $showingSearchParameters) {
-                    SearchParametersView(selectedTags: $selectedTags, age: .constant(25), gender: $gender, country: $country, language: $language, showingSearchParameters: $showingSearchParameters)
-                }
+            VStack {
                 
+                // Search Button
+                VStack {
+                    Button {
+                        showingSearchParameters = true
+                    } label: {
+                        Image(systemName: "slider.vertical.3")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                    }
+                    // Show Search Fields Window
+                    .sheet(isPresented: $showingSearchParameters) {
+                        SearchParametersView(selectedTags: $selectedTags, age: .constant(25), gender: $gender, country: $country, language: $language, showingSearchParameters: $showingSearchParameters)
+                }
+                }.padding(.top, 140)
+                
+                // Go Chat Button
+                VStack {
+                    Spacer()
+                }
                 Button {
                     // some action
                 } label: {
                     VStack {
                         Text("Go")
+                            .font(.system(size: 100))
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
                         Text("Chat")
+                            .font(.system(size: 50))
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(.top, -80)
                     }
                     .padding()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 250, height: 250)
                     .background(.blue)
                     .clipShape(Circle())
                 }
+                Spacer().frame(height: 200)
             }
         }
     }

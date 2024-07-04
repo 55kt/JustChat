@@ -7,9 +7,10 @@
 
 import SwiftUI
 import Firebase
+import RealmSwift
 
 @main
-struct JustChatApp: App {
+struct JustChatApp: SwiftUI.App {
     
     init() {
         FirebaseApp.configure()

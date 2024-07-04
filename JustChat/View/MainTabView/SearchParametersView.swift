@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SearchParametersView: View {
+    
+    //MARK: - Properties
     @Binding var selectedTags: [String]
     @Binding var age: Int?
     @Binding var gender: String
@@ -24,9 +26,10 @@ struct SearchParametersView: View {
         }
     }
     
-    
+    //MARK: - Body
     var body: some View {
         NavigationView {
+            // Fields
             VStack(spacing: 20) {
                 TextField("Age", value: $age, formatter: NumberFormatter())
                     .padding()
@@ -54,6 +57,7 @@ struct SearchParametersView: View {
                         .background(Color(.secondarySystemBackground))
                         .clipShape(RoundedRectangle(cornerRadius: 5))
                     
+                    // Tags Optionality
                     if !filteredTags.isEmpty {
                         List(filteredTags, id: \.self) { tag in
                                 Text(tag)
