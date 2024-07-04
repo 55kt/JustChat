@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B62C32E2C36EB0800192B51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B62C32D2C36EB0800192B51 /* GoogleService-Info.plist */; };
+		4B62C32F2C36EB0800192B51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B62C32D2C36EB0800192B51 /* GoogleService-Info.plist */; };
+		4B62C3302C36EB0800192B51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B62C32D2C36EB0800192B51 /* GoogleService-Info.plist */; };
+		4B62C3482C36F82100192B51 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4B62C3472C36F82100192B51 /* RealmSwift */; };
 		4BD9752B2C2F277B0037FE1A /* JustChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */; };
 		4BD9752D2C2F277B0037FE1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9752C2C2F277B0037FE1A /* ContentView.swift */; };
 		4BD9752F2C2F277C0037FE1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD9752E2C2F277C0037FE1A /* Assets.xcassets */; };
@@ -32,11 +36,6 @@
 		4BD975892C3321F30037FE1A /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975882C3321F30037FE1A /* BlurView.swift */; };
 		4BD9758C2C344A9F0037FE1A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9758B2C344A9F0037FE1A /* MessageView.swift */; };
 		4BD9758E2C344C5C0037FE1A /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9758D2C344C5C0037FE1A /* BubbleView.swift */; };
-		4BD975A52C35ADED0037FE1A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975A42C35ADED0037FE1A /* RealmSwift */; };
-		4BD975A82C35AE770037FE1A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975A72C35AE770037FE1A /* FirebaseAuth */; };
-		4BD975AA2C35AE770037FE1A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975A92C35AE770037FE1A /* FirebaseFirestore */; };
-		4BD975AC2C35AE770037FE1A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975AB2C35AE770037FE1A /* FirebaseMessaging */; };
-		4BD975AE2C35AE770037FE1A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD975AD2C35AE770037FE1A /* FirebaseStorage */; };
 		4BD975B02C35BAF00037FE1A /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975AF2C35BAF00037FE1A /* ChatMessage.swift */; };
 		4BD975B22C35BAFB0037FE1A /* ChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975B12C35BAFB0037FE1A /* ChatSession.swift */; };
 		4BD975B42C35CD320037FE1A /* SearchParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD975B32C35CD320037FE1A /* SearchParametersView.swift */; };
@@ -61,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B62C32D2C36EB0800192B51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BD975272C2F277B0037FE1A /* JustChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustChatApp.swift; sourceTree = "<group>"; };
 		4BD9752C2C2F277B0037FE1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,11 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD975AC2C35AE770037FE1A /* FirebaseMessaging in Frameworks */,
-				4BD975A52C35ADED0037FE1A /* RealmSwift in Frameworks */,
-				4BD975A82C35AE770037FE1A /* FirebaseAuth in Frameworks */,
-				4BD975AE2C35AE770037FE1A /* FirebaseStorage in Frameworks */,
-				4BD975AA2C35AE770037FE1A /* FirebaseFirestore in Frameworks */,
+				4B62C3482C36F82100192B51 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +230,7 @@
 		4BD975592C2F2A4F0037FE1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4B62C32D2C36EB0800192B51 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -308,11 +305,7 @@
 			);
 			name = JustChat;
 			packageProductDependencies = (
-				4BD975A42C35ADED0037FE1A /* RealmSwift */,
-				4BD975A72C35AE770037FE1A /* FirebaseAuth */,
-				4BD975A92C35AE770037FE1A /* FirebaseFirestore */,
-				4BD975AB2C35AE770037FE1A /* FirebaseMessaging */,
-				4BD975AD2C35AE770037FE1A /* FirebaseStorage */,
+				4B62C3472C36F82100192B51 /* RealmSwift */,
 			);
 			productName = JustChat;
 			productReference = 4BD975272C2F277B0037FE1A /* JustChat.app */;
@@ -387,8 +380,7 @@
 			);
 			mainGroup = 4BD9751E2C2F277B0037FE1A;
 			packageReferences = (
-				4BD975A32C35ADED0037FE1A /* XCRemoteSwiftPackageReference "realm-swift" */,
-				4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4B62C3462C36F82100192B51 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 4BD975282C2F277B0037FE1A /* Products */;
 			projectDirPath = "";
@@ -408,6 +400,7 @@
 			files = (
 				4BD975322C2F277C0037FE1A /* Preview Assets.xcassets in Resources */,
 				4BD9752F2C2F277C0037FE1A /* Assets.xcassets in Resources */,
+				4B62C32E2C36EB0800192B51 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +408,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B62C32F2C36EB0800192B51 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B62C3302C36EB0800192B51 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +616,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JustChat/Preview Content\"";
 				DEVELOPMENT_TEAM = QT3T249ZHN;
 				ENABLE_PREVIEWS = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -650,6 +646,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JustChat/Preview Content\"";
 				DEVELOPMENT_TEAM = QT3T249ZHN;
 				ENABLE_PREVIEWS = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -787,49 +784,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4BD975A32C35ADED0037FE1A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		4B62C3462C36F82100192B51 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.28.1;
+				minimumVersion = 10.52.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4BD975A42C35ADED0037FE1A /* RealmSwift */ = {
+		4B62C3472C36F82100192B51 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4BD975A32C35ADED0037FE1A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 4B62C3462C36F82100192B51 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
-		};
-		4BD975A72C35AE770037FE1A /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		4BD975A92C35AE770037FE1A /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		4BD975AB2C35AE770037FE1A /* FirebaseMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
-		};
-		4BD975AD2C35AE770037FE1A /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4BD975A62C35AE770037FE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
