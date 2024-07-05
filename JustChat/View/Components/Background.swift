@@ -9,12 +9,32 @@ import SwiftUI
 
 struct Background: View {
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.6), Color.purple.opacity(0.6)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                        .blur(radius: 20)
-                        .ignoresSafeArea()
+        LinearGradient(
+            gradient: Gradient(colors: [
+                
+                Color(UIColor { traitCollection in
+                    traitCollection.userInterfaceStyle == .dark ? .white : .gray
+                }),
+                Color(UIColor { traitCollection in
+                    traitCollection.userInterfaceStyle == .dark ? .black : .white
+                }),
+                Color(UIColor { traitCollection in
+                    traitCollection.userInterfaceStyle == .dark ? UIColor.blue.withAlphaComponent(0.5) : UIColor.blue.withAlphaComponent(0.5)
+                }),
+            ]),
+            startPoint: .top,
+            endPoint: .bottom
+        )
+        .ignoresSafeArea()
     }
 }
 
 #Preview {
-    Background()
+    Group {
+        Background()
+            .preferredColorScheme(.dark)
+        
+        Background()
+            .preferredColorScheme(.light)
+    }
 }

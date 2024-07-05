@@ -34,12 +34,17 @@ struct GoChatView: View {
                         Image(systemName: "slider.vertical.3")
                             .resizable()
                             .frame(width: 40, height: 40)
+                            .padding()
+                            .background(Circle().fill(Color.blue))
+                            .foregroundStyle(.white)
                     }
                     // Show Search Fields Window
                     .sheet(isPresented: $showingSearchParameters) {
                         SearchParametersView(selectedTags: $selectedTags, age: .constant(25), gender: $gender, country: $country, language: $language, showingSearchParameters: $showingSearchParameters)
                 }
-                }.padding(.top, 140)
+                }
+                .overlay(Circle().stroke(Color.white, lineWidth: 1))
+                .padding(.top, 140)
                 
                 // Go Chat Button
                 VStack {
@@ -66,6 +71,7 @@ struct GoChatView: View {
                     .background(.blue)
                     .clipShape(Circle())
                 }
+                .overlay(Circle().stroke(Color.white, lineWidth: 1))
                 Spacer().frame(height: 200)
             }
         }
