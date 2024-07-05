@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "originHash" : "80cb0a288f3c18c5634bf9837bfafe87115af281a383b5712d98ce4b838faf59",
+=======
+  "originHash" : "c2266d2357bead4ce3a1320d829e683a4c4f167c0625b2f8f7a332dea46f8546",
+>>>>>>> Stashed changes
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -121,7 +125,11 @@
     {
       "identity" : "realm-swift",
       "kind" : "remoteSourceControl",
+<<<<<<< Updated upstream
       "location" : "https://github.com/realm/realm-swift",
+=======
+      "location" : "https://github.com/realm/realm-swift.git",
+>>>>>>> Stashed changes
       "state" : {
         "revision" : "ae827eabf45ba64562c75b6e99038da6ce12d427",
         "version" : "10.52.1"

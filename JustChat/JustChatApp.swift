@@ -12,13 +12,19 @@ import RealmSwift
 @main
 struct JustChatApp: SwiftUI.App {
     
+    @AppStorage("isLogin") var isLogin: Bool = false
+    
     init() {
         FirebaseApp.configure()
     }
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isLogin {
+                ContentView()
+            } else {
+                LoginView()
+            }
         }
     }
 }
