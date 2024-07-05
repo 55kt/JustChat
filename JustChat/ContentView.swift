@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab: Int = 3
+    @AppStorage("isLogin") private var isLogin: Bool = false
     
     //MARK: - Body
     var body: some View {
@@ -17,10 +18,16 @@ struct ContentView: View {
             ZStack {
                 Background()
                 
-                MainTabView(selectedTab: $selectedTab)
-                    .edgesIgnoringSafeArea(.bottom) 
-                
-                CustomTabView(tabSelection: $selectedTab)
+                if !isLogin {
+                    LoginView()
+                } else {
+                    Group {
+                        MainTabView(selectedTab: $selectedTab)
+                            .edgesIgnoringSafeArea(.bottom)
+                        
+                        CustomTabView(tabSelection: $selectedTab)
+                    }
+                }
             }
             
             
