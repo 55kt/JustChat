@@ -14,8 +14,6 @@ struct ChatsView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                customNavBar(navTiltle: "Chats")
-                
                 ScrollView {
                     ForEach(0..<10) { num in
                         NavigationLink(destination: MessageView()) {

@@ -219,9 +219,17 @@
 		4BD975552C2F2A220037FE1A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4BD975722C30604C0037FE1A /* MainTabView */,
-				4BD9755A2C2F2B6A0037FE1A /* LoginView */,
-				4BD9755B2C2F2B760037FE1A /* CreateAccountView */,
+				4BD975792C3061250037FE1A /* GoChatView.swift */,
+				4BD975772C3061120037FE1A /* ChatsView.swift */,
+				4BD9758B2C344A9F0037FE1A /* MessageView.swift */,
+				4BD975752C3061060037FE1A /* SettingsView.swift */,
+				4BD9757F2C31906A0037FE1A /* ProfileView.swift */,
+				4BD975812C3190820037FE1A /* SomeView.swift */,
+				4BD975B32C35CD320037FE1A /* SearchParametersView.swift */,
+				4BD975732C3060620037FE1A /* MainTabView.swift */,
+				4BD975B52C35CD830037FE1A /* TagSelectionView.swift */,
+				4BD9755C2C2F2B930037FE1A /* LoginView.swift */,
+				4BD9755E2C2F37D50037FE1A /* CreateAccountView.swift */,
 				4BD975612C2F3C940037FE1A /* Components */,
 			);
 			path = View;
@@ -258,22 +266,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4BD9755A2C2F2B6A0037FE1A /* LoginView */ = {
-			isa = PBXGroup;
-			children = (
-				4BD9755C2C2F2B930037FE1A /* LoginView.swift */,
-			);
-			path = LoginView;
-			sourceTree = "<group>";
-		};
-		4BD9755B2C2F2B760037FE1A /* CreateAccountView */ = {
-			isa = PBXGroup;
-			children = (
-				4BD9755E2C2F37D50037FE1A /* CreateAccountView.swift */,
-			);
-			path = CreateAccountView;
-			sourceTree = "<group>";
-		};
 		4BD975612C2F3C940037FE1A /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,30 +277,6 @@
 				4BD975832C319ABB0037FE1A /* customNavBar.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		4BD975722C30604C0037FE1A /* MainTabView */ = {
-			isa = PBXGroup;
-			children = (
-				4BD975732C3060620037FE1A /* MainTabView.swift */,
-				4BD975752C3061060037FE1A /* SettingsView.swift */,
-				4BD9758A2C344A6F0037FE1A /* Chats */,
-				4BD975792C3061250037FE1A /* GoChatView.swift */,
-				4BD9757F2C31906A0037FE1A /* ProfileView.swift */,
-				4BD975812C3190820037FE1A /* SomeView.swift */,
-				4BD975B32C35CD320037FE1A /* SearchParametersView.swift */,
-				4BD975B52C35CD830037FE1A /* TagSelectionView.swift */,
-			);
-			path = MainTabView;
-			sourceTree = "<group>";
-		};
-		4BD9758A2C344A6F0037FE1A /* Chats */ = {
-			isa = PBXGroup;
-			children = (
-				4BD975772C3061120037FE1A /* ChatsView.swift */,
-				4BD9758B2C344A9F0037FE1A /* MessageView.swift */,
-			);
-			path = Chats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

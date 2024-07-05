@@ -10,7 +10,9 @@ import SwiftUI
 struct SomeView: View {
     var body: some View {
         VStack {
-            customNavBar(navTiltle: "Some View")
+            Text("Some View")
+                .font(.title)
+                .bold()
         }
     }
 }

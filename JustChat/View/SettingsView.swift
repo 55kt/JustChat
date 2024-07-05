@@ -14,7 +14,9 @@ struct SettingsView: View {
     //MARK: - Body
     var body: some View {
         VStack {
-            customNavBar(navTiltle: "Settings")
+            Text("Settings View")
+                .font(.title)
+                .bold()
         }
     }
 }

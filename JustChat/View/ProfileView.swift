@@ -15,7 +15,6 @@ struct ProfileView: View {
     //MARK: - Body
     var body: some View {
         VStack {
-            customNavBar(navTiltle: "Profile")
             
             VStack {
                 customImage(image: Image(systemName: "person.circle.fill"), imageSize: CGSize(width: 200, height: 200))

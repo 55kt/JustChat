@@ -22,8 +22,6 @@ struct GoChatView: View {
     //MARK: - Body
     var body: some View {
         VStack {
-            customNavBar(navTiltle: "GoChat")
-            
             VStack {
                 
                 // Search Button
@@ -72,7 +70,7 @@ struct GoChatView: View {
                     .clipShape(Circle())
                 }
                 .overlay(Circle().stroke(Color.white, lineWidth: 1))
-                Spacer().frame(height: 200)
+                Spacer().frame(height: 250)
             }
         }
     }

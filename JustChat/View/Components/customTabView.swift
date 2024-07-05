@@ -42,7 +42,8 @@ struct CustomTabView: View {
                                     .scaleEffect(selectedTab == index ? 2.0 : 1.2)
                                     .foregroundStyle(selectedTab == index ? .blue : .gray)
                                 Text(tabBarItems[index].title)
-                                    .font(.caption)
+                                    .font(.footnote)
+                                    .bold()
                                     .foregroundColor(selectedTab == index ? .blue : .gray)
                             }
                             
@@ -56,7 +57,7 @@ struct CustomTabView: View {
                 .background(
                     BlurView(style: .systemUltraThinMaterial)
                         .cornerRadius(30)
-                        .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                        .shadow(color: Color.blue.opacity(0.9), radius: 4, x: 0, y: 6)
                 )
                 .padding(.horizontal, 10)
                 .padding(.bottom, 20)
