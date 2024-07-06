@@ -16,6 +16,13 @@
 		4B62C3512C36F9B900192B51 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B62C3502C36F9B900192B51 /* FirebaseStorage */; };
 		4BC3FB702C3876E200260CC9 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB6F2C3876E200260CC9 /* VerificationView.swift */; };
 		4BC3FB722C38771E00260CC9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB712C38771D00260CC9 /* AuthService.swift */; };
+		4BC3FB782C3979B600260CC9 /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */; };
+		4BC3FB792C3979B600260CC9 /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */; };
+		4BC3FB7A2C3979B600260CC9 /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */; };
+		4BC3FB7C2C397A5200260CC9 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB7B2C397A5200260CC9 /* Countries.swift */; };
+		4BC3FB7D2C397A5200260CC9 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB7B2C397A5200260CC9 /* Countries.swift */; };
+		4BC3FB7E2C397A5200260CC9 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB7B2C397A5200260CC9 /* Countries.swift */; };
+		4BC3FB812C397FF200260CC9 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC3FB802C397FF200260CC9 /* PhoneNumberKit */; };
 		4BCE3F332C3701880017D3AB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BCE3F322C3701880017D3AB /* RealmSwift */; };
 		4BCE3F342C3701B40017D3AB /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 4BCE3F322C3701880017D3AB /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4BD9752B2C2F277B0037FE1A /* JustChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */; };
@@ -84,6 +91,11 @@
 		4B62C32D2C36EB0800192B51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BC3FB6F2C3876E200260CC9 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		4BC3FB712C38771D00260CC9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = JustChat/View/AuthService.swift; sourceTree = SOURCE_ROOT; };
+		4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VerificationViewModel.swift; path = JustChat/View/VerificationViewModel.swift; sourceTree = SOURCE_ROOT; };
+		4BC3FB7B2C397A5200260CC9 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		4BC3FB822C39B02500260CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4BC3FB842C39B06C00260CC9 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		4BC3FB882C39B7BC00260CC9 /* JustChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustChat.entitlements; sourceTree = "<group>"; };
 		4BD975272C2F277B0037FE1A /* JustChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustChatApp.swift; sourceTree = "<group>"; };
 		4BD9752C2C2F277B0037FE1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +138,7 @@
 				4B62C34F2C36F9B900192B51 /* FirebaseMessaging in Frameworks */,
 				4B62C34B2C36F9B900192B51 /* FirebaseAuth in Frameworks */,
 				4B62C3512C36F9B900192B51 /* FirebaseStorage in Frameworks */,
+				4BC3FB812C397FF200260CC9 /* PhoneNumberKit in Frameworks */,
 				4BCE3F332C3701880017D3AB /* RealmSwift in Frameworks */,
 				4B62C34D2C36F9B900192B51 /* FirebaseFirestore in Frameworks */,
 			);
@@ -148,6 +161,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BC3FB832C39B06C00260CC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BC3FB842C39B06C00260CC9 /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BD9751E2C2F277B0037FE1A = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +176,7 @@
 				4BD9753A2C2F277D0037FE1A /* JustChatTests */,
 				4BD975442C2F277D0037FE1A /* JustChatUITests */,
 				4BD975282C2F277B0037FE1A /* Products */,
+				4BC3FB832C39B06C00260CC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +193,8 @@
 		4BD975292C2F277B0037FE1A /* JustChat */ = {
 			isa = PBXGroup;
 			children = (
+				4BC3FB882C39B7BC00260CC9 /* JustChat.entitlements */,
+				4BC3FB822C39B02500260CC9 /* Info.plist */,
 				4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */,
 				4BD9752C2C2F277B0037FE1A /* ContentView.swift */,
 				4BD975542C2F2A160037FE1A /* Models */,
@@ -217,6 +241,7 @@
 				4BD975692C30537C0037FE1A /* User.swift */,
 				4BD975AF2C35BAF00037FE1A /* ChatMessage.swift */,
 				4BD975B12C35BAFB0037FE1A /* ChatSession.swift */,
+				4BC3FB7B2C397A5200260CC9 /* Countries.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +268,7 @@
 		4BD975562C2F2A270037FE1A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -308,6 +334,7 @@
 				4B62C34E2C36F9B900192B51 /* FirebaseMessaging */,
 				4B62C3502C36F9B900192B51 /* FirebaseStorage */,
 				4BCE3F322C3701880017D3AB /* RealmSwift */,
+				4BC3FB802C397FF200260CC9 /* PhoneNumberKit */,
 			);
 			productName = JustChat;
 			productReference = 4BD975272C2F277B0037FE1A /* JustChat.app */;
@@ -384,6 +411,7 @@
 			packageReferences = (
 				4B62C3492C36F9B900192B51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				4BCE3F312C3701880017D3AB /* XCRemoteSwiftPackageReference "realm-swift" */,
+				4BC3FB7F2C397FF200260CC9 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
 			);
 			productRefGroup = 4BD975282C2F277B0037FE1A /* Products */;
 			projectDirPath = "";
@@ -442,6 +470,7 @@
 				4BD9758E2C344C5C0037FE1A /* BubbleView.swift in Sources */,
 				4BC3FB702C3876E200260CC9 /* VerificationView.swift in Sources */,
 				4BD975822C3190820037FE1A /* SomeView.swift in Sources */,
+				4BC3FB782C3979B600260CC9 /* VerificationViewModel.swift in Sources */,
 				4BD9756A2C30537C0037FE1A /* User.swift in Sources */,
 				4BD975802C31906A0037FE1A /* ProfileView.swift in Sources */,
 				4BD9752D2C2F277B0037FE1A /* ContentView.swift in Sources */,
@@ -455,6 +484,7 @@
 				4BD9757C2C306F310037FE1A /* customTabView.swift in Sources */,
 				4BD9757E2C3085880037FE1A /* Background.swift in Sources */,
 				4BD975B62C35CD830037FE1A /* TagSelectionView.swift in Sources */,
+				4BC3FB7C2C397A5200260CC9 /* Countries.swift in Sources */,
 				4BD975842C319ABB0037FE1A /* customNavBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +494,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD9753C2C2F277D0037FE1A /* JustChatTests.swift in Sources */,
+				4BC3FB7D2C397A5200260CC9 /* Countries.swift in Sources */,
+				4BC3FB792C3979B600260CC9 /* VerificationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +503,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC3FB7A2C3979B600260CC9 /* VerificationViewModel.swift in Sources */,
 				4BD975482C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift in Sources */,
+				4BC3FB7E2C397A5200260CC9 /* Countries.swift in Sources */,
 				4BD975462C2F277D0037FE1A /* JustChatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustChat/JustChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JustChat/Preview Content\"";
@@ -623,6 +658,7 @@
 				ENABLE_PREVIEWS = YES;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JustChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -646,6 +682,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustChat/JustChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JustChat/Preview Content\"";
@@ -653,6 +690,7 @@
 				ENABLE_PREVIEWS = YES;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JustChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -797,6 +835,14 @@
 				minimumVersion = 10.28.1;
 			};
 		};
+		4BC3FB7F2C397FF200260CC9 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/PhoneNumberKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.11;
+			};
+		};
 		4BCE3F312C3701880017D3AB /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -827,6 +873,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4B62C3492C36F9B900192B51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		4BC3FB802C397FF200260CC9 /* PhoneNumberKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC3FB7F2C397FF200260CC9 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
+			productName = PhoneNumberKit;
 		};
 		4BCE3F322C3701880017D3AB /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
