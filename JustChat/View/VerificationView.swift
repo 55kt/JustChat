@@ -13,6 +13,10 @@ struct VerificationView: View {
     @State private var code: [String] = Array(repeating: "", count: 6)
     @Binding var verificationID: String?
     @Binding var showVerificationView: Bool
+    @Binding var isLogin: Bool
+    @State private var errorMessage: String = ""
+    
+    @State private var textFieldRefs: [UITextField?] = Array(repeating: nil, count: 6)
     
     //MARK: - Body
     var body: some View {
@@ -22,23 +26,23 @@ struct VerificationView: View {
                 .fontWeight(.bold)
                 .padding(.bottom, 20)
             
+            if !errorMessage.isEmpty {
+                Text(errorMessage)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 10)
+            }
+            
             HStack(spacing: 10) {
                 ForEach(0..<6) { index in
-                        TextField("", text: $code[index])
+                    CodeTextField(text: $code[index], nextResponder: $textFieldRefs[min(index + 1, 5)], currentResponder: $textFieldRefs[index])
                         .frame(width: 40, height: 40)
                         .background(Color(.secondarySystemBackground))
                         .multilineTextAlignment(.center)
                         .keyboardType(.numberPad)
-                        .textContentType(.oneTimeCode)
                         .clipShape(RoundedRectangle(cornerRadius: 5))
-                        .onChange(of: code[index]) { newValue, transaction in
+                        .onChange(of: code[index]) { oldValue, newValue in
                             if newValue.count > 1 {
                                 code[index] = String(newValue.prefix(1))
-                            }
-                            if newValue.count == 1, index < 5 {
-                                withAnimation {
-                                    focusNextField(at: index)
-                                }
                             }
                         }
                 }
@@ -55,11 +59,10 @@ struct VerificationView: View {
                 AuthService.shared.verifyCode(verificationID: verificationID, verificationCode: verificationCode) { result in
                     switch result {
                     case .success:
-                        
+                        isLogin = true
                         showVerificationView = false
                     case .failure(let error):
-                        print("Error verifying code: \(error.localizedDescription)")
-                        
+                        errorMessage = "Error verifying code please try again or Request a new code"
                     }
                 }
             } label: {
@@ -67,20 +70,76 @@ struct VerificationView: View {
                     .fontWeight(.bold)
                     .padding()
                     .background(.blue)
-                    .foregroundStyle(.white)
-                    .clipShape(.capsule)
+                    .foregroundColor(.white)
+                    .clipShape(Capsule())
+            }
+            Button {
+                // requestNewCode
+            } label: {
+                Text("Request New Code")
+                    .foregroundStyle(.blue)
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.async {
+                textFieldRefs[0]?.becomeFirstResponder()
             }
         }
     }
+}
+
+struct CodeTextField: UIViewRepresentable {
+    @Binding var text: String
+    @Binding var nextResponder: UITextField?
+    @Binding var currentResponder: UITextField?
     
-    private func focusNextField(at index: Int) {
-        guard index < code.count - 1 else { return }
-        let nextIndex = index + 1
-        UIApplication.shared.sendAction(#selector(UIResponder.becomeFirstResponder), to: nil, from: code[nextIndex], for: nil)
+    class Coordinator: NSObject, UITextFieldDelegate {
+        @Binding var text: String
+        @Binding var nextResponder: UITextField?
+        @Binding var currentResponder: UITextField?
+        
+        init(text: Binding<String>, nextResponder: Binding<UITextField?>, currentResponder: Binding<UITextField?>) {
+            _text = text
+            _nextResponder = nextResponder
+            _currentResponder = currentResponder
+        }
+        
+        func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+            if string.count == 1 {
+                text = string
+                nextResponder?.becomeFirstResponder()
+                return false
+            } else if string.isEmpty {
+                text = ""
+                currentResponder?.resignFirstResponder()
+                return true
+            }
+            return false
+        }
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(text: $text, nextResponder: $nextResponder, currentResponder: $currentResponder)
+    }
+    
+    func makeUIView(context: Context) -> UITextField {
+        let textField = UITextField()
+        textField.delegate = context.coordinator
+        textField.textAlignment = .center
+        textField.keyboardType = .numberPad
+        textField.backgroundColor = UIColor.secondarySystemBackground
+        textField.layer.cornerRadius = 5
+        return textField
+    }
+    
+    func updateUIView(_ uiView: UITextField, context: Context) {
+        uiView.text = text
+        DispatchQueue.main.async {
+            currentResponder = uiView
+        }
     }
 }
 
-//MARK: - Preview
 #Preview {
-    VerificationView(verificationID: .constant(nil), showVerificationView: .constant(true))
+    VerificationView(verificationID: .constant("123456"), showVerificationView: .constant(true), isLogin: .constant(false))
 }

@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedTab: Int = 3
     @AppStorage("isLogin") private var isLogin: Bool = false
+    @State private var showVerificationView: Bool = false
+    @State private var verificationID: String? = nil
     
     //MARK: - Body
     var body: some View {
@@ -19,7 +21,7 @@ struct ContentView: View {
                 Background()
                 
                 if !isLogin {
-                    LoginView()
+                    LoginView(showVerificationView: $showVerificationView, verificationID: $verificationID)
                 } else {
                     Group {
                         MainTabView(selectedTab: $selectedTab)
@@ -27,7 +29,6 @@ struct ContentView: View {
                         
                         CustomTabView(tabSelection: $selectedTab)
                     }
-                    Text("Test45")
                 }
             }
             

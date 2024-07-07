@@ -10,9 +10,12 @@ import SwiftUI
 struct CreateAccountView: View {
     
     //MARK: - Properties
-    @State private var username = ""
-    @State private var password = ""
-    @State private var phoneNumber = ""
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var phoneNumber: String = ""
+    @State private var errorMessage: String = ""
+    @Binding var showVerificationView: Bool
+    @Binding var verificationID: String?
     
     //MARK: - Body
     var body: some View {
@@ -23,6 +26,12 @@ struct CreateAccountView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(.bottom, 20)
+            
+            if !errorMessage.isEmpty {
+                Text(errorMessage)
+                    .foregroundStyle(.red)
+                    .padding(.bottom, 10)
+            }
             
             // Fields Area
             customFields(username: username, password: password, phoneNumber: phoneNumber, showPhoneNumber: true)
@@ -37,5 +46,5 @@ struct CreateAccountView: View {
 
 //MARK: - Preview
 #Preview {
-    CreateAccountView()
+    CreateAccountView(showVerificationView: .constant(false), verificationID: .constant(""))
 }

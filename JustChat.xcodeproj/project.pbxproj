@@ -16,12 +16,6 @@
 		4B62C3512C36F9B900192B51 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B62C3502C36F9B900192B51 /* FirebaseStorage */; };
 		4BC3FB702C3876E200260CC9 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB6F2C3876E200260CC9 /* VerificationView.swift */; };
 		4BC3FB722C38771E00260CC9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB712C38771D00260CC9 /* AuthService.swift */; };
-		4BC3FB782C3979B600260CC9 /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */; };
-		4BC3FB792C3979B600260CC9 /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */; };
-		4BC3FB7A2C3979B600260CC9 /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */; };
-		4BC3FB7C2C397A5200260CC9 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB7B2C397A5200260CC9 /* Countries.swift */; };
-		4BC3FB7D2C397A5200260CC9 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB7B2C397A5200260CC9 /* Countries.swift */; };
-		4BC3FB7E2C397A5200260CC9 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB7B2C397A5200260CC9 /* Countries.swift */; };
 		4BC3FB812C397FF200260CC9 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC3FB802C397FF200260CC9 /* PhoneNumberKit */; };
 		4BCE3F332C3701880017D3AB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BCE3F322C3701880017D3AB /* RealmSwift */; };
 		4BCE3F342C3701B40017D3AB /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 4BCE3F322C3701880017D3AB /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -91,8 +85,6 @@
 		4B62C32D2C36EB0800192B51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BC3FB6F2C3876E200260CC9 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		4BC3FB712C38771D00260CC9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = JustChat/View/AuthService.swift; sourceTree = SOURCE_ROOT; };
-		4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VerificationViewModel.swift; path = JustChat/View/VerificationViewModel.swift; sourceTree = SOURCE_ROOT; };
-		4BC3FB7B2C397A5200260CC9 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		4BC3FB822C39B02500260CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4BC3FB842C39B06C00260CC9 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4BC3FB882C39B7BC00260CC9 /* JustChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustChat.entitlements; sourceTree = "<group>"; };
@@ -241,7 +233,6 @@
 				4BD975692C30537C0037FE1A /* User.swift */,
 				4BD975AF2C35BAF00037FE1A /* ChatMessage.swift */,
 				4BD975B12C35BAFB0037FE1A /* ChatSession.swift */,
-				4BC3FB7B2C397A5200260CC9 /* Countries.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,7 +259,6 @@
 		4BD975562C2F2A270037FE1A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4BC3FB772C3979B600260CC9 /* VerificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -470,7 +460,6 @@
 				4BD9758E2C344C5C0037FE1A /* BubbleView.swift in Sources */,
 				4BC3FB702C3876E200260CC9 /* VerificationView.swift in Sources */,
 				4BD975822C3190820037FE1A /* SomeView.swift in Sources */,
-				4BC3FB782C3979B600260CC9 /* VerificationViewModel.swift in Sources */,
 				4BD9756A2C30537C0037FE1A /* User.swift in Sources */,
 				4BD975802C31906A0037FE1A /* ProfileView.swift in Sources */,
 				4BD9752D2C2F277B0037FE1A /* ContentView.swift in Sources */,
@@ -484,7 +473,6 @@
 				4BD9757C2C306F310037FE1A /* customTabView.swift in Sources */,
 				4BD9757E2C3085880037FE1A /* Background.swift in Sources */,
 				4BD975B62C35CD830037FE1A /* TagSelectionView.swift in Sources */,
-				4BC3FB7C2C397A5200260CC9 /* Countries.swift in Sources */,
 				4BD975842C319ABB0037FE1A /* customNavBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,8 +482,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD9753C2C2F277D0037FE1A /* JustChatTests.swift in Sources */,
-				4BC3FB7D2C397A5200260CC9 /* Countries.swift in Sources */,
-				4BC3FB792C3979B600260CC9 /* VerificationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,9 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC3FB7A2C3979B600260CC9 /* VerificationViewModel.swift in Sources */,
 				4BD975482C2F277D0037FE1A /* JustChatUITestsLaunchTests.swift in Sources */,
-				4BC3FB7E2C397A5200260CC9 /* Countries.swift in Sources */,
 				4BD975462C2F277D0037FE1A /* JustChatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
