@@ -27,6 +27,7 @@ struct ContentView: View {
                         
                         CustomTabView(tabSelection: $selectedTab)
                     }
+                    Text("Test")
                 }
             }
             
