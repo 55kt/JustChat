@@ -28,7 +28,7 @@ struct ContentView: View {
                             .edgesIgnoringSafeArea(.bottom)
                         
                         CustomTabView(tabSelection: $selectedTab)
-                    }
+                    } test
                 }
             }
             

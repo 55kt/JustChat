@@ -17,6 +17,9 @@
 		4BC3FB702C3876E200260CC9 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB6F2C3876E200260CC9 /* VerificationView.swift */; };
 		4BC3FB722C38771E00260CC9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3FB712C38771D00260CC9 /* AuthService.swift */; };
 		4BC3FB812C397FF200260CC9 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC3FB802C397FF200260CC9 /* PhoneNumberKit */; };
+		4BC3FB952C3AAD9800260CC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BC3FB942C3AAD9800260CC9 /* GoogleService-Info.plist */; };
+		4BC3FB962C3AAD9800260CC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BC3FB942C3AAD9800260CC9 /* GoogleService-Info.plist */; };
+		4BC3FB972C3AAD9800260CC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BC3FB942C3AAD9800260CC9 /* GoogleService-Info.plist */; };
 		4BCE3F332C3701880017D3AB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4BCE3F322C3701880017D3AB /* RealmSwift */; };
 		4BCE3F342C3701B40017D3AB /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 4BCE3F322C3701880017D3AB /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4BD9752B2C2F277B0037FE1A /* JustChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */; };
@@ -85,9 +88,8 @@
 		4B62C32D2C36EB0800192B51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BC3FB6F2C3876E200260CC9 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		4BC3FB712C38771D00260CC9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = JustChat/View/AuthService.swift; sourceTree = SOURCE_ROOT; };
-		4BC3FB822C39B02500260CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4BC3FB842C39B06C00260CC9 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		4BC3FB882C39B7BC00260CC9 /* JustChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustChat.entitlements; sourceTree = "<group>"; };
+		4BC3FB942C3AAD9800260CC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BD975272C2F277B0037FE1A /* JustChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustChatApp.swift; sourceTree = "<group>"; };
 		4BD9752C2C2F277B0037FE1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,8 +187,7 @@
 		4BD975292C2F277B0037FE1A /* JustChat */ = {
 			isa = PBXGroup;
 			children = (
-				4BC3FB882C39B7BC00260CC9 /* JustChat.entitlements */,
-				4BC3FB822C39B02500260CC9 /* Info.plist */,
+				4BC3FB942C3AAD9800260CC9 /* GoogleService-Info.plist */,
 				4BD9752A2C2F277B0037FE1A /* JustChatApp.swift */,
 				4BD9752C2C2F277B0037FE1A /* ContentView.swift */,
 				4BD975542C2F2A160037FE1A /* Models */,
@@ -420,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD975322C2F277C0037FE1A /* Preview Assets.xcassets in Resources */,
+				4BC3FB952C3AAD9800260CC9 /* GoogleService-Info.plist in Resources */,
 				4BD9752F2C2F277C0037FE1A /* Assets.xcassets in Resources */,
 				4B62C32E2C36EB0800192B51 /* GoogleService-Info.plist in Resources */,
 			);
@@ -430,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B62C32F2C36EB0800192B51 /* GoogleService-Info.plist in Resources */,
+				4BC3FB962C3AAD9800260CC9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B62C3302C36EB0800192B51 /* GoogleService-Info.plist in Resources */,
+				4BC3FB972C3AAD9800260CC9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,10 +639,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JustChat/JustChat.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JustChat/Preview Content\"";
-				DEVELOPMENT_TEAM = QT3T249ZHN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -655,6 +660,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = main.JustChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -667,10 +673,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JustChat/JustChat.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JustChat/Preview Content\"";
-				DEVELOPMENT_TEAM = QT3T249ZHN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -687,6 +694,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = main.JustChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

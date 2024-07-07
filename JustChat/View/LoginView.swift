@@ -36,8 +36,12 @@ struct LoginView: View {
             // Fields Area
             customFields(username: username, password: password, phoneNumber: "", showPhoneNumber: false)
           
-            // Action Button
-            customButton(action: {}, buttonName: "Log In")
+            // Log In Button
+            customButton(action: {
+                
+                
+                
+            }, buttonName: "Log In")
             
             // Navigation Button to Create Account View
             NavigationLink(destination: CreateAccountView(showVerificationView: $showVerificationView, verificationID: $verificationID)) {
